@@ -8,7 +8,8 @@ body{
     margin: 0;
     padding: 0;
     background-color: #225e21;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 header{
@@ -291,10 +292,19 @@ footer{
     cursor: pointer;
 }
 
-@media screen and (max-width: 600px){
-    body{
-        color: black;
+
+@media screen and (max-width: 460px){
+    #banner-content{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
     }
+}
+
+@media screen and (max-width: 600px){
     #information-content {
         display: flex;
         align-items: center;
@@ -351,7 +361,28 @@ footer{
         overflow: hidden;
         flex: 2;
     }
-
+    
+    #contact-image-text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.5rem;
+    }
+    
+    
+    #restaurant-name{
+        font-size: 1.2rem;
+    
+    }
+    #restaurant-name-sub{
+        font-size: 1rem;
+    
+    }
+    
+    #banner-button{
+        font-size: 1rem;
+    }
 }
 
 
