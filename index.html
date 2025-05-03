@@ -5,28 +5,125 @@
             Asmara Contact Page (Responsive Design)
         </title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
         <header> 
                 <div id="banner-content"> 
                     <div id = "banner-name-container">
-                            <strong class = "resturnat-name">Asmara</strong>
-                            <strong class = "resturnat-name">An Eritrean Restaurant</strong>
+                            <p class = "text" id = "restaurant-name"><b>Asmara</b></p>
+                            <p class = "text" id = "restaurant-name-sub">An Eritrean Restaurant</p>
                     </div>
                     <div id = "banner-list-container">       
                         <ul id="banner-list">
-                            <li><a class="top-banner-list-element" href="index.html"> Home </a></li>
-                            <li><a class="top-banner-list-element" href="interviews.html"> Menu </a></li>
-                            <li><a class="top-banner-list-element" href="personas.html"> Contact </a></li>
+                            <li class = "banner-button-container">
+                                <p class="text" id = "banner-button"> Home </p>
+                            </li>
+                            
+                            <li class = "banner-button-container"> 
+                                <p class="text" id = "banner-button"> Menu </p>
+                            </li>
+
+                            <li class = "banner-button-container">
+                                <p class="text" id = "banner-button"> Contact </p>
+                            </li>
+
                         </ul>
                     </div> 
                 </div>
         </header>
 
-    
-        <section id = "website-content">   
-        </section>
+        <div id = "contact-image-content">
+            <img src="images/Owner-picture.png" alt="Asmara Contact Image" id = "contact-image">
+            <strong class = "text" id = "contact-image-text">Contact Us</strong>
+        </div>
 
+        <div id = "information-content">   
+            <div id = "contact-information">   
+                <div class = "contact-information-section">
+                    <div class = "contact-information-header">
+                        <p class="text contact-information-header-text"> <b> <u> Address:</u> </b></p>
+                    </div>
+                    <p class="text contact-information-text"> 51 Oak Street</p>
+                    <p class="text contact-information-text"> Portland, ME 04101</p>
+                </div>
+
+                <div class = "contact-information-section">
+                    <div class = "contact-information-header">
+                        <p class="text contact-information-header-text"> <b> <u> Phone Number: </u> </b></p>
+                    </div>
+                    <p class="text contact-information-text"> (207) 253-5122 </p>
+                </div>
+
+                <div class = "contact-information-section">
+
+                    <div class = "contact-information-header">
+                        <p class="text contact-information-header-text"> <b> <u> Contact Name: </u> </b></p>
+                    </div>
+                    <p class="text contact-information-text"> Asmeret Teklu </p>
+                </div>
+            </div>
+
+            <div id = "message-content">   
+                <div id="message-context-section">
+                    <div class = "message-information-section">   
+                        <div class = "message-information-section">
+                            <div class = "contact-information-header">
+                                <p class="text contact-information-header-text"> <b> <u> Name:</u> </b></p>
+                            </div>
+                            <div class="small-input-box">
+                                <p class="input-box-text"> Your name</p>
+                            </div>
+                        </div>
+                        
+                        <div class = "message-information-section">
+                            <div class = "contact-information-header">
+                                <p class="text contact-information-header-text"> <b> <u> Email:</u> </b></p>
+                            </div>
+                            <div class="small-input-box">
+                                <p class="input-box-text"> Your email</p>
+                            </div>
+                        </div>
+    
+                        <div class = "message-information-section">
+                            <div class = "contact-information-header">
+                                <p class="text contact-information-header-text"> <b> <u> Subject:</u> </b></p>
+                            </div>
+                            <div class="small-input-box">
+                                <p class="input-box-text"> Subject of message </p>
+                            </div>
+                        </div>
+    
+
+    
+                    </div>
+    
+                    <div class="written-message-section">
+                        <div class="message-information-section">   
+                            <div class = "contact-information-header">
+                                <p class="text contact-information-header-text"> <b> <u> Message:</u> </b></p>
+                            </div>
+                            <div class="small-input-box" id = "message-input-box">
+                                <p class="input-box-text" > Your message</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div id="submit-button">
+                        <p class="text" id="submit-text"> <b>Submit</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+                <p class="text" id="footer-text"> <b>Asmara |</b></p>
+                <i class="fa fa-instagram" id = "icons"></i>
+                <i class="fa fa-yelp" id = "icons"></i>
+                <i class="fa fa-facebook" id = "icons"></i>
+        </footer>
     </body>
 </html>

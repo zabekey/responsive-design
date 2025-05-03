@@ -1,7 +1,10 @@
+/* 
+    General css for the website
+*/
 body{
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #225e21;
 }
 
 header{
@@ -10,8 +13,23 @@ header{
     text-align: center;
 }
 
+/* 
+    Begining of overall banner/nav bar css
+*/
 #banner-content{
     display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* 
+    CSS for the restaurant name and sub name portion of the banner
+*/
+#banner-name-container{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0;
@@ -20,50 +38,247 @@ header{
     overflow: hidden;
 }
 
-.resturnat-name{
-    font-size: 1.2rem;
+
+#restaurant-name{
+    font-size: 2.5rem;
+
+}
+#restaurant-name-sub{
+    font-size: 1.3rem;
+
+}
+
+.text{
     font-family: Khand;
     color: #fffd55;
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+    CSS for the nav bar portion of the banner
+*/
+#banner-list-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    float : right;
+    overflow: hidden;
 }
 
 #banner-list {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 15px;
     padding: 0;
     margin: 0;
     overflow: hidden;
+
 }
 
-.top-banner-list-element {
-    color: white;
-    text-align: center;
-    padding: 20px;
-} 
+.banner-button-container{
+    padding: 15px;
+}
 
-.top-banner-list-element:hover {
-    background-color: black;
+.banner-button-container:hover{
+    background-color: #094807;
     border-radius: 10px;
     cursor: pointer;
 }
 
-#banner-list a {
-    color: white;
-    font-size: 1.2rem;
-    padding: 5px;
+#banner-button{
+    font-size: 1.3rem;
+}
+
+/* 
+    CSS for the contact image portion of the website 
+*/
+#contact-image-content{
+    position: relative;
+    text-align: center;
+    height: auto;
+    width: 100%;
+}
+
+#contact-image{
+    width: 100%;
+    height: 100%;
+}
+
+#contact-image-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+}
+
+/* 
+    CSS for the body of the page with contact information
+*/
+
+#information-content {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center; 
+    gap: .2rem;
+    color: #225e21;
+    width: 100%;
+    margin: 0;
+    padding: .5rem;
+    overflow: hidden;
+}
+
+#contact-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .2rem;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    float : left;
+    overflow: hidden;
+    flex: 1;
+}
+
+.contact-information-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    width: 90%;
+    margin: 0;
+    padding: .5rem;
+    float : left;
+    overflow: hidden;
+}
+
+.contact-information-header{
+    width: 100%;
+    padding-left: 2rem; 
+}
+
+.contact-information-header-text{
+    font-size: 1.5rem;
+}
+
+.contact-information-text{
+    font-size: 1.3rem;
+}
+
+#message-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: #225e21;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    /* padding: .5rem; */
+    overflow: hidden;
+    flex: 2;
+}
+
+.message-information-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    float : left;
+    overflow: hidden;
+    flex: 2;
+}
+
+#message-context-section {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: .2rem;
+    color: #225e21;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: .5rem;
+    overflow: hidden;
+    flex: 2;
+}
+
+.small-input-box{
+    width: 90%;
+    border-radius: 3%;
+    background-color: #EDE5E5;
+}
+
+.input-box-text{
+    padding: .5rem;
+    margin: .2rem;
+    opacity: 50%;
+    color: black;
+}
+
+.written-message-section{
+    /* height: 100%; */
+    flex: 2;
+}
+
+#message-input-box{
+    height: 100%;
+}
+
+#submit-button{
+    background-color: #fffd55;
+    border-radius: 3%;
+    padding: .75rem;
+}
+
+#submit-text{
+    font-size: 1.3rem;
+    color: #225e21;
+    margin-left: .5rem;
+    margin-right: .5rem;
 }
 
 
-#website-content {
-    max-width: 85%;
-    margin: 20px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0px 0px 10px gray;
+footer{
+    background-color: #fffd55;
+    display:flex;
+    gap: .75rem;
+    align-content: center;
+    justify-content: center;
+    padding: .5rem;
 }
 
-.website-content-section {
+#footer-text{
+    font-size: 1.5rem;
+    color: #225e21;
+}
+
+#icons{
+    font-size: 1.8rem;
+    color: #225e21;
+}
+
+
+
+
+
+
+
+
+/* .website-content-section {
     max-width: 95%;
     margin: 10px auto;
     margin-left: 5px;
@@ -124,7 +339,7 @@ header{
     height: auto;
     display: block;
     margin: 10px 0;
-}
+} */
 
 
 /* .table{
